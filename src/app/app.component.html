@@ -1,10 +1,24 @@
-<h1>Proyecto de Angular</h1>
-<ul>
+<!--Cabezera-->
+<header>
+    <ul>
 
-    <li><a [routerLink]="['/sobre-mi']">Sobre mi</a></li>
-    <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
-    <li><a [routerLink]="['/crear-proyecto']">Crear Proyectos</a></li>
-    <li><a [routerLink]="['/contacto']">Contactos</a></li>
-</ul>
+        <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a></li>
+        <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a></li>
+        <li id="logo"><a href="#">JC</a></li>
+        <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear Proyectos</a></li>
+        <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contactos</a></li>
+    </ul>
+</header>
 
-<router-outlet></router-outlet>
+<!-- Cuerpo -->
+<section id="content">
+
+    <router-outlet></router-outlet>
+
+</section>
+
+<!-- Pie de pagina -->
+<footer>
+    Master en JavaScript con Angular y MongoDB
+
+</footer>
